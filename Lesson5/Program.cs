@@ -68,7 +68,7 @@ namespace Lesson5
                     case 5:
                         return;
                 }
-            }
+            }//
         }
         static void Task1()
         {
