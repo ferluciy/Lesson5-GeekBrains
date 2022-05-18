@@ -1,0 +1,12 @@
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\bin\Debug\Lesson5.exe.config
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\bin\Debug\Lesson5.exe
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\bin\Debug\Lesson5.pdb
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\bin\Debug\GBcool.dll
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\bin\Debug\GBcool.pdb
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\obj\Debug\Lesson5.csproj.AssemblyReference.cache
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\obj\Debug\Lesson5.csproj.SuggestedBindingRedirects.cache
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\obj\Debug\Lesson5.csproj.CoreCompileInputs.cache
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\obj\Debug\Lesson5.csproj.CopyComplete
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\obj\Debug\Lesson5.exe
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\obj\Debug\Lesson5.pdb
+D:\Учеба Юнити\Проекты\Lesson5\Lesson5\bin\Debug\ocenki.txt

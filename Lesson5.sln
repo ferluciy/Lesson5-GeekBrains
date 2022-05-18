@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson5", "Lesson5\Lesson5.csproj", "{CD2D6061-29A2-4FE6-B79C-B8CBDA917468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBcool", "GBcool\GBcool.csproj", "{0A006F7D-F9B1-43F4-A27F-0E4F558186B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD2D6061-29A2-4FE6-B79C-B8CBDA917468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD2D6061-29A2-4FE6-B79C-B8CBDA917468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD2D6061-29A2-4FE6-B79C-B8CBDA917468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD2D6061-29A2-4FE6-B79C-B8CBDA917468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A006F7D-F9B1-43F4-A27F-0E4F558186B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A006F7D-F9B1-43F4-A27F-0E4F558186B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A006F7D-F9B1-43F4-A27F-0E4F558186B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A006F7D-F9B1-43F4-A27F-0E4F558186B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8D34472-B9AE-4B39-9A46-D01C0159ACD3}
+	EndGlobalSection
+EndGlobal
