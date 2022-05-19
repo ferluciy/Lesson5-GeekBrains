@@ -12,7 +12,11 @@ namespace GBcool
         public string Login;
         public string Password;
     }
-
+    public struct user
+    {
+        public string FIO;
+        public double ball;
+    }
     public static class Message //класс для работы со строками
     {
         private static string[] separators = { ",", ".", "!", "?", ";", ":", " ", " - " };
@@ -763,7 +767,41 @@ namespace GBcool
                 }
             }//рекурсивный метод, который считает сумму чисел от a до b включительно.
 
+            public static void quickSort(user[] array, int low, int high) //реализация быстрой сортировки для массива user[]
+        {
+            if (array.Length == 0)
+                return;//завершить выполнение, если длина массива равна 0
+
+            if (low >= high)
+                return;//завершить выполнение если уже нечего делить
+
+            // выбрать опорный элемент
+            int middle = low + (high - low) / 2;
+            user opora = array[middle];
+
+            // разделить на подмассивы, который больше и меньше опорного элемента
+            int i = low, j = high;
+            while (i <= j)
+            {
+                while (array[i].ball < opora.ball) i++;                
+                while (array[j].ball > opora.ball) j--;
+                if (i <= j)
+                {//меняем местами
+                    if (i != j) // меняем местами если не равны
+                    {
+                        user temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
+                    }
+                    i++;
+                    j--;
+                }
+            }
+            // вызов рекурсии для сортировки левой и правой части
+            if (low < j) quickSort(array, low, j);
+            if (high > i) quickSort(array, i, high);
         }
+    }
     }
 
 

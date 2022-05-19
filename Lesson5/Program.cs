@@ -11,11 +11,7 @@ namespace Lesson5
 {
     internal class Program
     {
-        struct user
-        {
-            public string FIO;
-            public double ball;
-        }
+        
         static void Main(string[] args)
         {
             while (true)
@@ -180,12 +176,10 @@ namespace Lesson5
             Classes.PrintCenter("█                   Трое худших учеников                   █", ConsoleColor.White);
             Classes.PrintCenter("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█", ConsoleColor.White);
             Console.WriteLine("");
-            string filename = AppDomain.CurrentDomain.BaseDirectory + "ocenki.txt";
-            StreamReader sr = new StreamReader(filename);
+            StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "ocenki.txt");
             int counter = 0;
             int max = int.Parse(sr.ReadLine()); //берем число из первой строки, в не указано количество учеников по заданию
             string[] strs = new string[5];
-            string fio;
             user[] student_list = new user[max];
             user student = new user();
 
@@ -200,25 +194,25 @@ namespace Lesson5
                 if (counter == max) break;
             }
             Classes.PrintLeft("Список и средний балл:", false, ConsoleColor.Yellow);
-            for (int i = 0; i < student_list.Length; i++) Classes.PrintLeft((i+1)+") "+ student_list[i].FIO 
-                + ": "+ student_list[i].ball, false, ConsoleColor.Yellow);
+            for (int i = 0; i < student_list.Length; i++) 
+                Classes.PrintLeft((i+1)+") "+ student_list[i].FIO + ": "+ student_list[i].ball, false, ConsoleColor.Yellow);
 
-            //сортируем список по среднему баллу от меньшего к большему
-            for (int i = 0; i < student_list.Length; i++)
-            {
-                for (int j = 0; j < student_list.Length - 1; j++)
-                {
-                    double b = student_list[j].ball;
-                    fio = student_list[j].FIO;
-                    if (student_list[j].ball > student_list[j + 1].ball)
-                    {
-                        student_list[j].ball = student_list[j + 1].ball;
-                        student_list[j + 1].ball = b;
-                        student_list[j].FIO = student_list[j + 1].FIO;
-                        student_list[j + 1].FIO = fio.ToString();
-                    }
-                }
-            }
+            //сортируем список по среднему баллу от меньшего к большему Пузырьковая
+            //for (int i = 0; i < student_list.Length; i++)
+            //{
+            //    for (int j = 0; j < student_list.Length - 1; j++)
+            //    {
+            //        student = student_list[j];
+            //        if (student_list[j].ball > student_list[j + 1].ball)
+            //        {
+            //            student_list[j] = student_list[j + 1];
+            //            student_list[j + 1] = student;
+            //        }
+            //    }
+            //}
+            //конец сортировки
+
+            Classes.quickSort(student_list, 0, student_list.Length - 1); //быстрая сортировка
             Console.WriteLine("");
             Classes.PrintLeft("Худшие:", false, ConsoleColor.Yellow);
             for (int i = 0; i < student_list.Length; i++)
