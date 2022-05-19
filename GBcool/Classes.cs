@@ -671,7 +671,6 @@ namespace GBcool
                     return re + (im > 0 ? "+" : "") + im + "i";
                 }
             }
-
             public static bool DelNaChislo(int a, int b, int del) //делиться только a или только b на del без остатка
         {
             // if (((a % del == 0) && (b % del != 0)) || ((b % del == 0) && (a % del != 0))) { return true; }
@@ -703,7 +702,6 @@ namespace GBcool
                 Console.ReadKey();
                 Console.WriteLine(""); //делаем отступ
             }
-
             public static int NumberSumm(int n) //сумма цифр числа
             {
                 int s = 0;
@@ -766,19 +764,12 @@ namespace GBcool
                     return a - 1 + RecursiaTwo(a, b);
                 }
             }//рекурсивный метод, который считает сумму чисел от a до b включительно.
-
             public static void quickSort(user[] array, int low, int high) //реализация быстрой сортировки для массива user[]
         {
-            if (array.Length == 0)
-                return;//завершить выполнение, если длина массива равна 0
-
-            if (low >= high)
-                return;//завершить выполнение если уже нечего делить
-
+            if ((array.Length == 0) || (low >= high)) return;
             // выбрать опорный элемент
             int middle = low + (high - low) / 2;
             user opora = array[middle];
-
             // разделить на подмассивы, который больше и меньше опорного элемента
             int i = low, j = high;
             while (i <= j)
@@ -786,7 +777,7 @@ namespace GBcool
                 while (array[i].ball < opora.ball) i++;                
                 while (array[j].ball > opora.ball) j--;
                 if (i <= j)
-                {//меняем местами
+                {
                     if (i != j) // меняем местами если не равны
                     {
                         user temp = array[i];
