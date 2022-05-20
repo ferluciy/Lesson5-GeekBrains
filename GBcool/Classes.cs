@@ -100,9 +100,6 @@ namespace GBcool
                 for (var j = 0; j < source.Length; j++)
                 {
                     counter_source += source[i] == source[j] ? 1 : 0;
-                }
-                for (var j = 0; j < str.Length; j++)
-                {
                     counter_str += str[j] == source[i] ? 1 : 0;
                 }
                 flag = counter_str == counter_source ? true : false;
